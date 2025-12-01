@@ -10,22 +10,20 @@ export default function Footer(): React.JSX.Element {
             Contact
           </h2>
           <p className="text-md text-white/80 max-w-2xl mx-auto mb-8">
-            I&apos;m currently looking to join a cross-functional team that values 
-            improving people&apos;s lives through accessible design, or have a project 
-            in mind? Let&apos;s connect.
+            I&apos;m currently seeking a <span className="text-purple-400">developer role</span><br/> <span className="text-sm">where I can contribute my MERN stack skills to building high-quality, production-ready applications.</span>
           </p>
           <a
             href="mailto:ibii.code@gmail.com"
             className="text-md text-purple-400 hover:text-purple-300 transition-colors"
           >
-            ibii.code@gmail.com
+            tvfayiztv@gmail.com
           </a>
         </div>
 
         {/* Social Media Icons */}
         <div className="flex justify-center gap-6 mt-12">
           <Link
-            href="https://www.instagram.com/ibii.memon/"
+            href="https://www.instagram.com/faaeezz._/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
@@ -40,7 +38,7 @@ export default function Footer(): React.JSX.Element {
             />
           </Link>
           <Link
-            href="https://github.com/ibrahimmemonn"
+            href="https://github.com/fayiztv"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
@@ -55,7 +53,7 @@ export default function Footer(): React.JSX.Element {
             </svg>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/ibrahimmemonn/"
+            href="https://www.linkedin.com/in/fayiztv/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-purple-500/30 hover:border-purple-500/50 transition-all"
@@ -73,7 +71,8 @@ export default function Footer(): React.JSX.Element {
 
         <div className="text-center mt-12 pt-8 border-t border-white/10">
           <p className="text-white/60 text-sm">
-            © {new Date().getFullYear()} Ibrahim Memon. All rights reserved.
+            © {new Date().getFullYear()} Muhammed Fayiz.
+              Customized and deployed from an open-source portfolio by Ibrahim Memon.
           </p>
         </div>
       </div>

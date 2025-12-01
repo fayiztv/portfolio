@@ -6,32 +6,23 @@ interface ExperienceCard {
   title: string;
   description: string;
   icon: string;
+  link: string;
 }
 
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    title: "WebHR - HR Management App",
-    description: "WebHR automates all of your company's HR processes such as Recruitment, Onboarding, Payroll, Time & Attendance, Leaves & PTO, Performance, and much more.",
+    title: "Marlo  - Maritime Fintech App",
+    description: "A maritime-focused fintech platform that simplifies global payments, expense management, and financial operations for shipping and logistics businesses.",
     icon: "/cards/card-1.png",
+    link: "/"
   },
   {
     id: 2,
-    title: "WebHR Kiosk - Time Clock Kiosk",
-    description: "WebHR Kiosk is a time clock kiosk that allows you to clock in and out of your work. It is a simple and easy to use app that allows you to clock in and out of your work.",
+    title: "Brototype - Travel Package Booking App",
+    description: "A travel booking application that allows users to explore, compare, and book curated travel packages with a smooth and user-friendly experience.",
     icon: "/cards/card-2.png",
-  },
-  {
-    id: 3,
-    title: "Somezing - AI-Powered Agents",
-    description: "Somezing is a AI-Powered Agents to Automate Your Workflows. It is a simple and easy to use app that allows you to automate your workflows.",
-    icon: "/cards/card-3.png",
-  },
-  {
-    id: 4,
-    title: "FileIT - File Sharing App",
-    description: "FileIT is a file sharing app that allows you to share files with your friends and family. It is a simple and easy to use app that allows you to share files with your friends and family.",
-    icon: "/cards/card-4.png",
+    link: "https://omway.netlify.app/"
   },
 ];
 
@@ -64,14 +55,16 @@ export default function Experience(): React.JSX.Element {
               <p className="text-white/70 text-sm mb-4">
                 {card.description}
               </p>
-              <Link
-                href="https://ibiimemon.com/lab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
-              >
+               {card.id !== 1 && (  
+                 <Link
+                 href={card.link}
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
+                 >
                 LEARN MORE →
               </Link>
+                )}
               </div>
 
             </div>

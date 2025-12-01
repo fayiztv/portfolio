@@ -12,34 +12,35 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-  description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products that balance user needs and business goals. 3+ years of industry experience.",
+  title: "Muhammed Fayiz T V",
+  description:
+    "A self-taught full-stack developer with 2+ years of experience, building scalable and performant web applications that balance clean code, user experience, and business needs.",
   keywords: [
-    "Ibrahim Memon",
+    "Muhammed Fayiz T V",
     "Software Engineer",
-    "UI/UX Designer",
-    "Frontend Developer",
+    "Full Stack Developer",
+    "MERN Stack Developer",
     "React Developer",
     "Next.js Developer",
-    "Web Designer",
-    "WebHR Engineer",
     "Portfolio",
   ],
-  authors: [{ name: "Ibrahim Memon" }],
-  creator: "Ibrahim Memon",
-  publisher: "Ibrahim Memon",
+  authors: [{ name: "Muhammed Fayiz T V" }],
+  creator: "Muhammed Fayiz T V",
+  publisher: "Muhammed Fayiz T V",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ibiimemon.com",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products.",
-    siteName: "Ibrahim Memon Portfolio",
+    url: "",
+    title: "Muhammed Fayiz T V - Software Engineer",
+    description:
+      "A self-taught full-stack developer building scalable and user-focused web applications.",
+    siteName: "Muhammed Fayiz Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR.",
+    title: "Muhammed Fayiz T V - Software Engineer",
+    description:
+      "Full-stack developer specializing in modern web applications.",
   },
   robots: {
     index: true,
@@ -53,6 +54,7 @@ export const metadata: Metadata = {
     },
   },
 };
+
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -68,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://ibiimemon.com" />
+        <link rel="canonical" href={undefined} />
       </head>
       <body
         className={`${poppins.variable} font-sans antialiased`}

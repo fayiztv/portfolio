@@ -5,24 +5,15 @@ interface Project {
   title: string;
   description: string;
   image: string;
-  link?: string;
 }
 
 const featuredProjects: Project[] = [
   {
     id: 1,
-    title: "NeuraWeb – Futuristic AI Website Landing Design",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
-    link: "https://www.figma.com/community/file/1441377868897233703/ai-website-landing-design",
-    image: "/projects/project-1.png",
-  },
-  {
-    id: 2,
-    title: "Apple Vision Pro – HR Software Design",
-    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
-   link: "https://www.figma.com/community/file/1371824014208363481/apple-vision-pro-hr-software-design",
-    image: "/projects/project-2.png",
-  },
+    title: "Eturf – Multi Turf Booking Platform",
+    description: "A multi-turf booking platform that allows users to discover nearby turfs, check availability, and book slots seamlessly through a modern and intuitive interface.",
+    image: "/projects/project-banner-eturf.png",
+  }
 ];
 
 export default function Projects(): React.JSX.Element {
@@ -55,33 +46,6 @@ export default function Projects(): React.JSX.Element {
                       </p>
                     </div>
                   </div>
-                  {/* Website link */}
-                  {project.link && (
-                    <div className="flex gap-4">
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white hover:text-purple-400 transition-colors duration-200"
-                        aria-label="Visit project website"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="w-6 h-6"
-                        >
-                          <circle cx="12" cy="12" r="10" />
-                          <line x1="2" y1="12" x2="22" y2="12" />
-                          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                        </svg>
-                      </a>
-                    </div>
-                  )}
                 </div>
 
                 {/* Image Content */}

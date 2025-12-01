@@ -4,7 +4,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
-  const texts = ["Software Engineer", "UI/UX Designer", "React Native Developer"];
+  const texts = [
+    "Software Engineer",
+    "Front-end Developer",
+    "Back-end Developer",
+    "React.Js Developer",
+  ];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -12,7 +17,7 @@ export default function Banner(): React.JSX.Element {
 
   useEffect(() => {
     const currentText = texts[currentTextIndex];
-    
+
     if (!isDeleting) {
       // Typing effect
       if (displayedText.length < currentText.length) {
@@ -36,10 +41,12 @@ export default function Banner(): React.JSX.Element {
         }, typingSpeed);
         return () => clearTimeout(timeout);
       } else {
-        // Finished deleting, move to next text
-        setIsDeleting(false);
-        setTypingSpeed(100); // Reset typing speed
-        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+        const timeout = setTimeout(() => {
+          setIsDeleting(false);
+          setTypingSpeed(100); // Reset typing speed
+          setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+        }, 200); // small delay so it's still smooth
+        return () => clearTimeout(timeout);
       }
     }
   }, [displayedText, isDeleting, currentTextIndex, texts, typingSpeed]);
@@ -68,7 +75,7 @@ export default function Banner(): React.JSX.Element {
                   <div className="relative">
                     <p className="text-white text-lg whitespace-nowrap">
                       Hello! I Am{" "}
-                      <span className="text-purple-400">Ibrahim Memon</span>
+                      <span className="text-purple-400">Muhammed Fayiz</span>
                     </p>
                   </div>
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
@@ -103,31 +110,34 @@ export default function Banner(): React.JSX.Element {
                 width={100}
                 height={100}
                 className="absolute "
-                style={{ left: "-100px", top: "-50px", width: "auto", height: "auto" }}
+                style={{
+                  left: "-100px",
+                  width: "auto",
+                  height: "auto",
+                }}
               />
-              <div style={{ bottom: 40, position: "relative" }}>
+              <div style={{ bottom: 10, position: "relative" }}>
                 <p className="text-white text-lg">
                   Hello! I Am{" "}
-                  <span className="text-purple-400">Ibrahim Memon</span>
+                  <span className="text-purple-400">Muhammed Fayiz</span>
                 </p>
               </div>
               <div className="absolute -bottom-2 left-8 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/10"></div>
             </div>
             <div className="">
-              <p className="text-2xl"> A Designer who </p>
+              <p className="text-2xl"> A Developer who </p>
               <h1 className="text-5xl tracking-tight lg:text-7xl font-semibold text-white leading-tight">
-                Judges a book
+                Judges a project
                 <br /> by its{" "}
                 <span className="relative inline-block">
-                  <Image src="/assets/circle.png" alt="Circle" width={200} height={200} className="absolute mt-2" />
                   <span className="bg-gradient-to-r from-violet-600 via-violet-400 to-violet-600 bg-clip-text text-transparent">
-                    cover
+                    bugs
                   </span>
                 </span>
                 ...
               </h1>
               <p className="text-md text-white/80">
-                Because if the cover does not impress you what else can?
+                Because fixing them tells you how it was built.
               </p>
             </div>
           </div>
@@ -138,16 +148,15 @@ export default function Banner(): React.JSX.Element {
             <span className="animate-pulse">|</span>
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
-            <span>Currently, I&apos;m a Software Engineer at</span>
-            <span className="flex items-center gap-2">
-              <Image src="/assets/webhr.webp" alt="WebHR" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "auto" }} />
-              <span className="text-blue-400 font-semibold">WebHR,</span>
+            <span>
+              Currently, a Freelance Software Engineer | Open to Full-Time
+              Opportunities
             </span>
           </p>
           <p className="text-lg text-white/80 max-w-2xl mt-15 mx-auto lg:mx-0">
-            A self-taught UI/UX designer, functioning in the industry for 3+
-            years now. I make meaningful and delightful digital products that
-            create an equilibrium between user needs and business goals.
+            A self-taught full-stack developer with 2 years of experience,
+            building scalable and performant web applications that balance clean
+            code, user experience, and real business needs.
           </p>
         </div>
       </div>
