@@ -10,10 +10,10 @@ export default function Footer(): React.JSX.Element {
             Contact
           </h2>
           <p className="text-md text-white/80 max-w-2xl mx-auto mb-8">
-            I&apos;m currently seeking a <span className="text-purple-400">developer role</span><br/> <span className="text-sm">where I can contribute my MERN stack skills to building high-quality, production-ready applications.</span>
+            I&apos;m currently seeking a <span className="text-purple-400">Software Engineer</span><br/> <span className="text-sm">where I can contribute my MERN stack skills to building high-quality, production-ready applications.</span>
           </p>
           <a
-            href="mailto:ibii.code@gmail.com"
+            href="mailto:tvfayiztv@gmail.com"
             className="text-md text-purple-400 hover:text-purple-300 transition-colors"
           >
             tvfayiztv@gmail.com
@@ -71,8 +71,7 @@ export default function Footer(): React.JSX.Element {
 
         <div className="text-center mt-12 pt-8 border-t border-white/10">
           <p className="text-white/60 text-sm">
-            © {new Date().getFullYear()} Muhammed Fayiz.
-              Customized and deployed from an open-source portfolio by Ibrahim Memon.
+            © {new Date().getFullYear()} Muhammed Fayiz. All rights reserved.
           </p>
         </div>
       </div>

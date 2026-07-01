@@ -13,16 +13,26 @@ const experienceCards: ExperienceCard[] = [
   {
     id: 1,
     title: "Marlo  - Maritime Fintech App",
-    description: "A maritime-focused fintech platform that simplifies global payments, expense management, and financial operations for shipping and logistics businesses.",
+    description:
+      "A maritime-focused fintech platform that simplifies global payments, expense management, and financial operations for shipping and logistics businesses.",
     icon: "/cards/card-1.png",
-    link: "/"
+    link: "/",
   },
   {
     id: 2,
     title: "Brototype - Travel Package Booking App",
-    description: "A travel booking application that allows users to explore, compare, and book curated travel packages with a smooth and user-friendly experience.",
+    description:
+      "A travel booking application that allows users to explore, compare, and book curated travel packages with a smooth and user-friendly experience.",
     icon: "/cards/card-2.png",
-    link: "https://omway.netlify.app/"
+    link: "https://omway.netlify.app/",
+  },
+  {
+    id: 3,
+    title: "YourStore - Multi-Tenant E-commerce SaaS",
+    description:
+      "Founded and built a configurable multi-tenant e-commerce SaaS platform that enables businesses to launch their own online stores with reusable architecture, an admin dashboard, product management, and client-specific deployments.",
+    icon: "/cards/card-3.png",
+    link: "https://demo-store-in.vercel.app/",
   },
 ];
 
@@ -49,24 +59,21 @@ export default function Experience(): React.JSX.Element {
                 />
               </div>
               <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                {card.title}
-              </h3>
-              <p className="text-white/70 text-sm mb-4">
-                {card.description}
-              </p>
-               {card.id !== 1 && (  
-                 <Link
-                 href={card.link}
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
-                 >
-                LEARN MORE →
-              </Link>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {card.title}
+                </h3>
+                <p className="text-white/70 text-sm mb-4">{card.description}</p>
+                {card.id !== 1 && (
+                  <Link
+                    href={card.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
+                  >
+                    LEARN MORE →
+                  </Link>
                 )}
               </div>
-
             </div>
           ))}
         </div>
@@ -74,4 +81,3 @@ export default function Experience(): React.JSX.Element {
     </section>
   );
 }
-

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function Banner(): React.JSX.Element {
   const texts = [
-    "Software Engineer",
+    "Founder & Software Engineer",
     "Front-end Developer",
     "Back-end Developer",
     "React.Js Developer",
@@ -73,6 +73,12 @@ export default function Banner(): React.JSX.Element {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <div className="relative">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 mb-3">
+                      <span className="h-2 w-2 rounded-full bg-violet-400"></span>
+                      <span className="text-sm font-medium text-violet-300">
+                        Founder • YourStore SaaS
+                      </span>
+                    </div>
                     <p className="text-white text-lg whitespace-nowrap">
                       Hello! I Am{" "}
                       <span className="text-purple-400">Muhammed Fayiz</span>
@@ -116,6 +122,12 @@ export default function Banner(): React.JSX.Element {
                   height: "auto",
                 }}
               />
+              <div className="inline-flex items-center gap-2 px-5 py-1 rounded-full bg-violet-500/10 border border-violet-500/30 mb-5">
+                <span className="h-2 w-2 rounded-full bg-violet-400"></span>
+                <span className="text-sm font-medium text-violet-300">
+                  Founder • YourStore SaaS
+                </span>
+              </div>
               <div style={{ bottom: 10, position: "relative" }}>
                 <p className="text-white text-lg">
                   Hello! I Am{" "}
@@ -149,14 +161,14 @@ export default function Banner(): React.JSX.Element {
           </p>
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
             <span>
-              Currently, a Freelance Software Engineer | Open to Full-Time
+              Founder of an E-commerce SaaS Platform • Open to Full-Time
               Opportunities
             </span>
           </p>
           <p className="text-lg text-white/80 max-w-2xl mt-15 mx-auto lg:mx-0">
-            A self-taught full-stack developer with 2 years of experience,
-            building scalable and performant web applications that balance clean
-            code, user experience, and real business needs.
+            Software Engineer and SaaS founder with 2 years of experience
+            building scalable, production-ready web applications using modern
+            technologies.
           </p>
         </div>
       </div>
