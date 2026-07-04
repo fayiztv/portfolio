@@ -14,7 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Muhammed Fayiz T V",
   description:
-    "A self-taught full-stack developer with 2+ years of experience, building scalable and performant web applications that balance clean code, user experience, and business needs.",
+    "Full Stack Software Engineer with professional experience building scalable web applications using React.js, Node.js, Express.js, TypeScript, and PostgreSQL. Built and deployed a configurable white-label e-commerce SaaS platform for multiple businesses, with experience in REST APIs, third-party integrations, and cloud deployment.",
   keywords: [
     "Muhammed Fayiz T V",
     "Software Engineer",
@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   publisher: "Muhammed Fayiz T V",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "",
+    locale: "en_IN",
+    url: "https://fayiztv.netlify.app/",
     title: "Muhammed Fayiz T V - Software Engineer",
     description:
-      "A self-taught full-stack developer building scalable and user-focused web applications.",
+      "Full Stack Software Engineer with professional experience building scalable web applications",
     siteName: "Muhammed Fayiz Portfolio",
   },
   twitter: {
