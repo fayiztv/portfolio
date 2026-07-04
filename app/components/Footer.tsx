@@ -10,7 +10,7 @@ export default function Footer(): React.JSX.Element {
             Contact
           </h2>
           <p className="text-md text-white/80 max-w-2xl mx-auto mb-8">
-            I&apos;m currently seeking a <span className="text-purple-400">Software Engineer</span><br/> <span className="text-sm">where I can contribute my MERN stack skills to building high-quality, production-ready applications.</span>
+            I&apos;m currently seeking a <span className="text-purple-400">Software Engineer</span><br/> <span className="text-sm">role where I can contribute my MERN stack skills to building high-quality, production-ready applications.</span>
           </p>
           <a
             href="mailto:tvfayiztv@gmail.com"

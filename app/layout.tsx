@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     "Full Stack Developer",
     "MERN Stack Developer",
     "React Developer",
-    "Next.js Developer",
     "Portfolio",
   ],
   authors: [{ name: "Muhammed Fayiz T V" }],

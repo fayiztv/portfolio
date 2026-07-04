@@ -89,16 +89,16 @@ export default function Banner(): React.JSX.Element {
               </div>
               <Image
                 src="/assets/me.png"
-                alt="Ibrahim Memon - Software Engineer and Designer"
+                alt="Muhammed Fayiz - Software Engineer"
                 width={300}
                 height={300}
-                className=" max-w-md absolute"
+                className=" max-w-md mt-5 absolute md:mt-25 md:ml-15"
                 style={{ width: "auto", height: "auto" }}
                 priority
               />
               <Image
                 src="/assets/me-glow.png"
-                alt="Ibrahim Memon - Software Engineer and Designer"
+                alt="Muhammed Fayiz - Software Engineer"
                 width={300}
                 height={300}
                 className="max-w-md "
@@ -155,7 +155,7 @@ export default function Banner(): React.JSX.Element {
           </div>
         </div>
         <div className="space-y-3 pt-15 text-center lg:text-left">
-          <p className="text-5xl text-white font-bold">
+          <p className="text-5xl text-white font-bold min-h-[195px] lg:min-h-0">
             I&apos;m a {displayedText}
             <span className="animate-pulse">|</span>
           </p>
