@@ -11,7 +11,7 @@ export default function About(): React.JSX.Element {
           </p>
         </div>
         <Image 
-          src="/assets/illustration.png"
+          src="/assets/icon-banner.png"
           alt="Skills"
           width={800}
           height={800}
